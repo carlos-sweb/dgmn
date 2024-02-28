@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pp-drawer.js@1.0.6/pp-drawer.min.css">	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<style>
+h1,h2,h3,h4,p,li,span{		
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+</style>
+
 	<title>DGMN</title>
 </head>
 <body>
 <main class="container">
+
+<button onclick="drawer.open()">CLICK</button>
+
+
   <h1>Parte I</h1>
   <h3>CONOCIMIENTOS BÁSICOS PARA USUARIOS QUE SOLICITEN INSCRIBIR ARMAS DE FUEGO</h3>
 
@@ -28,7 +47,7 @@ bajarla íntegramente desde la página web: www.dgmn.cl</p>
   </section>
   
   <section>
-  	<h4>B) ALGUNOS ASPECTOS DE INTERES</h4>
+  	<h4>C) ALGUNOS ASPECTOS DE INTERES</h4>
   	<p>1. El Ministerio de Defensa Nacional a través de la Dirección General de
 Movilización Nacional estará a cargo de la supervigilancia y control de las
 armas, explosivos, fuegos artificiales y artículos pirotécnicos y otros elementos
@@ -239,7 +258,7 @@ en virtud de una resolución fundada, denegar, suspender, condicionar o limitar
 las autorizaciones que exige esta ley.</p></section>
 
 <section>
-	<h4>C) CLASIFICACIÓN DE LAS ARMAS</h4>
+	<h4>D) CLASIFICACIÓN DE LAS ARMAS</h4>
 	<p>Las armas se clasifican, según el tipo de arma, su uso y manipulación, las que a
 continuación se describen:</p>
 </section>
@@ -249,6 +268,11 @@ continuación se describen:</p>
 </main>
 
 
-	
+<div drawer-id="main" class="pp-drawer hidden_drawer drawer-shadow"></div>
+<div drawer-id="main" class="pp-drawer-scrim hidden"></div>
+<script src="https://cdn.jsdelivr.net/npm/pp-drawer.js@1.0.6/pp-drawer.min.js" ></script>
+<script type="text/javascript">
+	var drawer = new ppDrawer("main")
+</script>
 </body>
 </html>
