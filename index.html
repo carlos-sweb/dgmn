@@ -24,11 +24,18 @@ p,li{font-size:19px;}
 </head>
 <body>
 <main class="container">
-
-<button onclick="drawer.open()">CLICK</button>
-
-
-  <h1>Parte I</h1>
+<nav>	
+	<ul>
+	  <li onclick="drawer.open()" style="cursor: pointer;" ><strong>OPEN</strong></li>	  
+	</ul>	
+	<!--<ul>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">Services</a></li>
+	  <li><a href="#">Products</a></li>
+	</ul>-->
+  </nav>
+  
+  <h1 >Parte I</h1>
   <h3>CONOCIMIENTOS BÁSICOS PARA USUARIOS QUE SOLICITEN INSCRIBIR ARMAS DE FUEGO</h3>
 
   <section>
@@ -275,7 +282,14 @@ continuación se describen:</p>
 </main>
 
 
-<div drawer-id="main" class="pp-drawer hidden_drawer drawer-shadow"></div>
+<div drawer-id="main" class="pp-drawer hidden_drawer drawer-shadow">
+	<div style="width:100%;height:150px;background-color:#dedede;display:flex;float:left;justify-content: center; flex-direction: column; text-align: center;">
+		<h1 style="font-weight: bold;margin:0px;" >DGMN</h1>
+	</div>
+	<ul>
+		<li onclick="setTimeout(() => drawer.close() , 400 )" ><a href="#/objectivo">Objectivo</a></li>
+	</ul>
+</div>
 <div drawer-id="main" class="pp-drawer-scrim hidden"></div>
 <script src="https://cdn.jsdelivr.net/npm/pp-drawer.js@1.0.6/pp-drawer.min.js" ></script>
 <script type="text/javascript">
